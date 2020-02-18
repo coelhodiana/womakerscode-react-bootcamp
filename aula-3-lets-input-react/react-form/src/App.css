@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.form-alunas {
+  color: #434343;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.form-label {
+  display: block;
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+
+.form-button {
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  background-color: #232323;
+  color: white;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 1.2rem;
+}

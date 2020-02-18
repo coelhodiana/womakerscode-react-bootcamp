@@ -1,0 +1,49 @@
+WoMakerCode Bootcamp: React - Aula 2
+
+DOM
+
+JSX
+    1. Merge de HTML + Javascript (é um linguição)
+    2. Permite incorporar expressões
+    3. Ser utilizada dentro de funções, loops e ifs
+    4. Receber atributos
+    5. Camel case
+    6. Children dentro de div (recai não aceita tags soltas, os elementos precisam estar envolvidos em uma tag parent)
+
+Props
+    Propriedades de um componentes que herdam valores para renderizar nos componentes.
+    * São somente leitura
+    * O componente que recebe props nunca deve alterá-las
+    * Pode ser recebido de outro lugar (externa a class componente)
+
+
+        - Arrow function + desestruturação
+            const welcome = ({name}) => <h1>Hello, {name}</h1>
+        - O sinal “=> vale um return
+        - 
+
+Function Components
+    Componentes que são simplesmente uma função Javascript
+    - Fácil de testar
+    - 
+
+        Exemplo:
+        function Welcome(props) {
+            <h1>hello, {props.name}</h1>
+        }
+
+Class Componente
+    - Extende a classe Components do React
+    - contém lógica
+    -* gerenciamento de estado
+    - aceitam métodos do lifecycle do React
+
+State
+    - O componente controla o seu próprio estado
+    - ATENÇÃO: setState() é um método assíncrono, ele AGENDA um update no estado do componente
+    - é interno da class component
+
+Métodos do ciclo de vida do React  
+    - Funções executas em diferentes momentos da "vida" do componente.
+
+
