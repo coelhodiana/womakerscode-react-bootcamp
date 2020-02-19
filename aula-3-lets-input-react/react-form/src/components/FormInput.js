@@ -17,7 +17,7 @@ export class FormInput extends React.Component {
             <div>
                 <label className="form-label">{this.props.label}</label>
                 <input 
-                    inputType={this.props.type}
+                    type={this.props.type}
                     placeholder={this.props.placeholder}
                     name={this.props.name}
                     onChange={this.handleChange}

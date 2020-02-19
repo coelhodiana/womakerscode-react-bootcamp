@@ -30,10 +30,10 @@ export class FormAlunas extends React.Component {
     handleSubmit(event){
         event.preventDefault();
         const { nome, cidade, mail, cpf, telefone } = this.state;
-        if (!this.validateEmail(mail)) {
+        if (this.validateEmail(mail)===0) {
           return alert("Por favor insira um e-mail válido.");
         }
-        if (!nome || !cidade || !mail || !cpf || !telefone) {
+        if (nome===!'' || cidade===!'' || mail===!'' || cpf===!'' || telefone===!'') {
           return alert("por favor, preencha todos os campos");
         }
     }
@@ -63,7 +63,7 @@ export class FormAlunas extends React.Component {
                 <FormInput
                     name='mail'
                     label="Email"
-                    inputType="email"
+                    type="email"
                     value={this.state.mail}
                     onChange={this.handleChange}
                 />
