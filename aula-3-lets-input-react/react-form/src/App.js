@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import FormAlunas from './components/FormAlunas'
+import SignInForm from './components/SignInForm'
 
 function App() {
   return (
-    <FormAlunas />
+    <SignInForm />
   );
 }
 
